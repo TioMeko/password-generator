@@ -1,3 +1,4 @@
+/* Global Elements */
 *,
 *::before,
 *::after {
@@ -17,12 +18,6 @@ body {
   background-color: #f9fbfd;
 }
 
-.wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 header {
   text-align: center;
   padding: 20px;
@@ -30,6 +25,19 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+button[disabled] {
+  cursor: default;
+  background: #c0c7cf;
+}
+
+/* Main body content */
+.wrapper {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Card class */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -72,6 +80,8 @@ header {
   clear: both;
 }
 
+/* CSS for the button */
+
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -88,15 +98,11 @@ header {
   cursor: pointer;
 }
 
-button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
-}
-
 .float-right {
   float: right;
 }
 
+/* Password textbox */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -118,6 +124,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* Media Queries */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
